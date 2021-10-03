@@ -1,7 +1,7 @@
 aws_c_cal:
 - 0.5.12
 aws_c_common:
-- 0.6.9
+- 0.6.11
 aws_c_http:
 - 0.6.6
 aws_c_io:
@@ -9,7 +9,7 @@ aws_c_io:
 c_compiler:
 - vs2017
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 target_platform:
