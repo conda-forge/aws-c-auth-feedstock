@@ -24,7 +24,7 @@ requirements:
     - aws-c-common
     - aws-c-http
     - aws-c-io
-    - aws-c-sdkuitls
+    - aws-c-sdkutils
 
 test:
   commands:
