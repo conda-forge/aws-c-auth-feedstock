@@ -1,5 +1,5 @@
 {% set name = "aws-c-auth" %}
-{% set version = "0.6.10" %}
+{% set version = "0.6.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 724748485c89eacc9458cca301666a1d3362a194234f9ba97ee99a8d2b8e1e90
+  sha256: d8a0d373cf8b0ff148a014ae2ba24c51f2e7a598b5b0cf3a6e64482c1cd37f90
 
 build:
   number: 0
