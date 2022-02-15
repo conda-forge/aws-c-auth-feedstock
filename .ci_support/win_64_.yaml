@@ -7,7 +7,7 @@ aws_c_http:
 aws_c_io:
 - 0.10.17
 aws_c_sdkutils:
-- 0.1.1
+- 0.1.2
 c_compiler:
 - vs2017
 channel_sources:
