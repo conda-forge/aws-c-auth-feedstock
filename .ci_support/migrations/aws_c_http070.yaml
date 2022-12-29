@@ -4,5 +4,5 @@ __migrator:
   migration_number: 1
   automerge: true
 aws_c_http:
-- 0.6.29
-migrator_ts: 1671629032.8559804
+- 0.7.0
+migrator_ts: 1671845690.0295432
