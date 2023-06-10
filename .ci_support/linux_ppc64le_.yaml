@@ -5,7 +5,7 @@ aws_c_common:
 aws_c_http:
 - 0.7.8
 aws_c_io:
-- 0.13.23
+- 0.13.24
 aws_c_sdkutils:
 - 0.1.10
 c_compiler:
