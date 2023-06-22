@@ -7,9 +7,11 @@ package:
 source:
   url: https://github.com/awslabs/aws-c-auth/archive/v{{ version }}.tar.gz
   sha256: a89b97ab00b7a9e2f4955cd907bc3e8098292396a970754212510e3ff1e2fa2b
+  patches:
+    - 200.patch
 
 build:
-  number: 5
+  number: 6
   run_exports:
     - {{ pin_subpackage("aws-c-auth", max_pin="x.x.x") }}
 
