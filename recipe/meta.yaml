@@ -7,8 +7,6 @@ package:
 source:
   url: https://github.com/awslabs/aws-c-auth/archive/v{{ version }}.tar.gz
   sha256: d3f28aa9e5fc6e40ec068687f02b711186e5d52569c100e0a12c9a268acf6e15
-  patches:
-    - 200.patch
 
 build:
   number: 0
