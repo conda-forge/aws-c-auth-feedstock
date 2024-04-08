@@ -9,7 +9,7 @@ source:
   sha256: 8fe380255a71a2d5c9acd4979c135f9842135ce6385010ea562bc0b532bf5b84
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-c-auth", max_pin="x.x.x") }}
 
@@ -17,6 +17,7 @@ requirements:
   build:
     - cmake
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - ninja
   host:
     - aws-c-cal
