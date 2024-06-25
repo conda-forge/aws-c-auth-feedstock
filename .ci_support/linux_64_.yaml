@@ -1,5 +1,5 @@
 aws_c_cal:
-- 0.6.15
+- 0.7.0
 aws_c_common:
 - 0.9.23
 aws_c_http:
