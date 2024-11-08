@@ -3,7 +3,7 @@ aws_c_cal:
 aws_c_common:
 - 0.10.0
 aws_c_http:
-- 0.9.0
+- 0.9.1
 aws_c_io:
 - 0.15.1
 aws_c_sdkutils:
@@ -17,7 +17,7 @@ c_stdlib:
 c_stdlib_version:
 - '2.17'
 cdt_name:
-- cos7
+- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -26,6 +26,3 @@ docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 target_platform:
 - linux-ppc64le
-zip_keys:
-- - c_stdlib_version
-  - cdt_name
