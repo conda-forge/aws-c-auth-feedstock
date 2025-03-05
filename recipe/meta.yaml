@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "0.8.6" %}
 
 package:
   name: aws-c-auth
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-auth/archive/v{{ version }}.tar.gz
-  sha256: 15241d7284aa0ac552589b61d04be455413af76fb2e1f13084a784a41f5faee5
+  sha256: 5f5df716d02a2b973ec685f1b50749b2e82736599189926817fbca00cfb194d7
 
 build:
   number: 0
