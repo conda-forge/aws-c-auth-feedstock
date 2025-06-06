@@ -3,11 +3,13 @@ About aws-c-auth-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-c-auth-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/awslabs/aws-c-auth
+Home: https://github.com/awslabs/aws-c-io
 
 Package license: Apache-2.0
 
 Summary: C99 library implementation of AWS client-side authentication: standard credentials providers and signing.
+
+Development: https://github.com/awslabs/aws-c-io
 
 Current build status
 ====================
