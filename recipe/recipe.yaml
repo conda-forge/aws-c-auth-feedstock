@@ -12,7 +12,7 @@ source:
   sha256: aa6e98864fefb95c249c100da4ae7aed36ba13a8a91415791ec6fad20bec0427
 
 build:
-  number: 12
+  number: 13
 
 requirements:
   build:
@@ -32,14 +32,13 @@ requirements:
 tests:
   - script:
       - if: unix
-        then: test -f $PREFIX/lib/libaws-c-auth${SHLIB_EXT}
-      - if: unix
-        then: test -f $PREFIX/include/aws/auth/auth.h
+        then:
+          - test -f $PREFIX/lib/libaws-c-auth${SHLIB_EXT}
+          - test -f $PREFIX/include/aws/auth/auth.h
       - if: win
-        then: if not exist %LIBRARY_INC%\\aws\\auth\\auth.h exit 1
-      - if: win
-        then: if not exist %PREFIX%\\Library\\bin\\aws-c-auth.dll exit 1
-
+        then:
+          - if not exist %LIBRARY_INC%\\aws\\auth\\auth.h exit 1
+          - if not exist %PREFIX%\\Library\\bin\\aws-c-auth.dll exit 1
 about:
   homepage: https://github.com/awslabs/aws-c-io
   repository: https://github.com/awslabs/aws-c-io
