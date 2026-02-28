@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.6"
+  version: "0.10.0"
 
 package:
   name: aws-c-auth
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-auth/archive/v${{ version }}.tar.gz
-  sha256: 2448e939d924731a891bec34f6da764d3a34afd52b9f5a3e614bb1bf96e6452d
+  sha256: 6129719183bb610c84b9e1be445353e9245d1c98d112412ed86bab6890934574
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
