@@ -179,5 +179,6 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/aws-sdk-cpp](https://github.com/orgs/conda-forge/teams/aws-sdk-cpp/)
+* [@tkelman](https://github.com/tkelman/)
 * [@xhochy](https://github.com/xhochy/)
 
