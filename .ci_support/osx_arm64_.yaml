@@ -11,7 +11,7 @@ aws_c_http:
 aws_c_io:
 - 0.26.3
 aws_c_sdkutils:
-- 0.2.6
+- 0.2.7
 c_compiler:
 - clang
 c_compiler_version:
