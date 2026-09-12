@@ -12,7 +12,7 @@ source:
   sha256: 1ddd1dc476debdbf9ff083e254396fdc3ea0846dccf7d5f983a6571303abcb35
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -39,6 +39,22 @@ tests:
         then:
           - if not exist %LIBRARY_INC%\\aws\\auth\\auth.h exit 1
           - if not exist %PREFIX%\\Library\\bin\\aws-c-auth.dll exit 1
+  - if: win and arm64
+    then:
+      requirements:
+        run:
+          - ${{ compiler('c') }}
+          - cmake
+      files:
+        recipe:
+          - CMakeLists.txt
+          - consumer.c
+      script:
+        - cmake -S . -B consumer-build -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%"
+        - cmake --build consumer-build
+        - consumer-build\auth_consumer.exe
+        - dumpbin /headers "%LIBRARY_BIN%\aws-c-auth.dll" | findstr /I /C:"AA64 machine (ARM64)"
+        - dumpbin /headers consumer-build\auth_consumer.exe | findstr /I /C:"AA64 machine (ARM64)"
 about:
   homepage: https://github.com/awslabs/aws-c-io
   repository: https://github.com/awslabs/aws-c-io
@@ -47,6 +63,7 @@ about:
   summary: 'C99 library implementation of AWS client-side authentication: standard credentials providers and signing.'
 
 extra:
+  feedstock-name: aws-c-auth
   recipe-maintainers:
     - tkelman
     - xhochy
