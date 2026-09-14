@@ -47,7 +47,6 @@ about:
   summary: 'C99 library implementation of AWS client-side authentication: standard credentials providers and signing.'
 
 extra:
-  feedstock-name: aws-c-auth
   recipe-maintainers:
     - tkelman
     - xhochy
