@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 3.15)
-project(auth_consumer LANGUAGES C)
-find_package(aws-c-auth CONFIG REQUIRED)
-add_executable(auth_consumer consumer.c)
-target_link_libraries(auth_consumer PRIVATE AWS::aws-c-auth)
